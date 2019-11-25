@@ -1,0 +1,148 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterUI.Master.cs" Inherits="StockManagmentSystemWebApp.UI.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Stock Managment System</title>
+    <style>
+        label.error {
+            color: red;
+        }
+    </style>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../StyleSheet.css" rel="stylesheet" />
+    <link href="../Content/bootstrap-datepicker3.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="myForm" runat="server">
+    <div>
+        
+        	<div id="templatemo_site_title_bar_wrapper">
+                <div id="templatemo_site_title_bar">
+                    <div id="site_title">
+                        <h1><a href="IndexUI.aspx">
+                            <img src="images/logo.png"
+						alt="Portfolio" /> <span>Stock Managment System</span> </a></h1>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="IndexUI.aspx">Home</a></li>
+                            <li><a href="">Setup</a>
+                                <ul>
+                                    <li><a href="CategoryUI.aspx">Category</a></li>
+                                    <li><a href="CompanyUI.aspx">Company</a></li>
+                                    <li><a href="ItemUI.aspx">Item</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Stock</a>
+                                <ul>
+                                    <li><a href="StockInUI.aspx">Stock In</a></li>
+                                    <li><a href="StockOutUI.aspx">Stock Out</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="ReportUI.aspx">Reports</a>
+                                <ul>
+                                    <li><a href="ItemsSummaryUI.aspx">Item's Summary</a></li>
+                                    <li><a href="SearchByDateUI.aspx">Search By Date</a></li>
+                                </ul>
+                            </li>
+                            <%--<li><a href="">About</a>
+                                <ul>
+                                    <li><a href="TeamUI.aspx">Team</a></li>
+                                    <li><a href="ContactUI.aspx">Contact</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="LoginUI.aspx">Logout</a></li>--%>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="main-body single-service-bg">
+		<%--<div class="contact-area">
+
+			<div class="formdesign">
+				
+
+			</div>
+		</div>--%>
+                <asp:ContentPlaceHolder ID="bodyContentPlaceHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+	        </div>
+	<!-- end of templatemo_content -->
+	        <div id="templatemo_content_bottom">
+            </div>
+            <div id="templatemo_footer_wrapper">
+                <div id="templatemo_footer">
+                    <div class="cleaner_h20">
+                    </div>
+                    <div align="center">
+                        Copyright &copy; Abhi Kumar Dey | <a href="#">BroGrammers</a>
+                    </div>
+                </div>
+		<!-- end of footer -->
+
+		        <div class="cleaner">
+                </div>
+            </div>
+        
+    </div>
+    </form>
+    <script src="../Scripts/jquery-3.3.1.js"></script>
+    <script src="../Scripts/jquery.validate.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/bootstrap-datepicker.js"></script>
+    
+    <script>
+        $("#myForm").validate({
+            rules: {
+                ctl00$bodyContentPlaceHolder$categoryNameTextBox: "required",
+                ctl00$bodyContentPlaceHolder$companyNameTextBox: "required",
+                ctl00$bodyContentPlaceHolder$companyDropDownList: "required",
+                ctl00$bodyContentPlaceHolder$categoryDropDownList: "required",
+                ctl00$bodyContentPlaceHolder$itemDropDownList: "required",
+                ctl00$bodyContentPlaceHolder$itemNameTextBox: "required",
+                ctl00$bodyContentPlaceHolder$availableQuantityTextBox: "required",
+                ctl00$bodyContentPlaceHolder$reorderLevelTextBox: {
+                    required: true,
+                    number: true
+                },
+                ctl00$bodyContentPlaceHolder$stockInQuantityTextBox: {
+                    required: true,
+                    number: true
+                },
+                ctl00$bodyContentPlaceHolder$stockOutQuantityTextBox: {
+                    required: true,
+                    number: true
+                },
+                ctl00$bodyContentPlaceHolder$fromDateTextBox: "required",
+                ctl00$bodyContentPlaceHolder$toDateTextBox: "required"
+            
+            }
+
+            //messages: {
+            //    nameTextBox: "Please enter your name",            
+            //    ageTextBox: {
+            //        required: "Please enter your age",
+            //        number: "Age should be number"
+            //    },
+            //    dateOfBirthTextBox: "Please enter your date of birth",
+            //    emailTextBox: "Please enter a valid email address"
+            //}
+        });
+
+        function alphaOnly(event) {
+            var key = event.keyCode;
+            return ((key >= 65 && key <= 90) || key == 8);
+        };
+
+
+    </script>
+    <asp:ContentPlaceHolder ID="footerContentPlaceHolder" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</body>
+</html>

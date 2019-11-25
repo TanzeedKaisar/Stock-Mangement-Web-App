@@ -1,0 +1,12 @@
+D:\Abhi\Programming\Visual Studio\BITM\Project\StockManagmentSystemWebApp\StockManagmentSystemWebApp\obj\Debug\StockManagmentSystemWebApp.csprojResolveAssemblyReference.cache
+D:\Abhi\Programming\Visual Studio\BITM\Project\StockManagmentSystemWebApp\StockManagmentSystemWebApp\bin\StockManagmentSystemWebApp.dll.config
+D:\Abhi\Programming\Visual Studio\BITM\Project\StockManagmentSystemWebApp\StockManagmentSystemWebApp\bin\StockManagmentSystemWebApp.dll
+D:\Abhi\Programming\Visual Studio\BITM\Project\StockManagmentSystemWebApp\StockManagmentSystemWebApp\bin\StockManagmentSystemWebApp.pdb
+D:\Abhi\Programming\Visual Studio\BITM\Project\StockManagmentSystemWebApp\StockManagmentSystemWebApp\obj\Debug\StockManagmentSystemWebApp.dll
+D:\Abhi\Programming\Visual Studio\BITM\Project\StockManagmentSystemWebApp\StockManagmentSystemWebApp\obj\Debug\StockManagmentSystemWebApp.pdb
+E:\StockManagmentSystemWebApp\StockManagmentSystemWebApp\bin\StockManagmentSystemWebApp.dll.config
+E:\StockManagmentSystemWebApp\StockManagmentSystemWebApp\bin\StockManagmentSystemWebApp.dll
+E:\StockManagmentSystemWebApp\StockManagmentSystemWebApp\bin\StockManagmentSystemWebApp.pdb
+E:\StockManagmentSystemWebApp\StockManagmentSystemWebApp\obj\Debug\StockManagmentSystemWebApp.csprojResolveAssemblyReference.cache
+E:\StockManagmentSystemWebApp\StockManagmentSystemWebApp\obj\Debug\StockManagmentSystemWebApp.dll
+E:\StockManagmentSystemWebApp\StockManagmentSystemWebApp\obj\Debug\StockManagmentSystemWebApp.pdb
